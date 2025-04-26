@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.calculator-component-container{
+    background-color: #ccc9b8;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+}
+.calculator-container{
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    width: 550px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.calculator-container h1{
+    color: #fff;
+}
+.container-items{
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.terminal{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 50px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 20px;
+}
+button{
+    border: none;
+    font-size: 20px;
+    transition: background .3s;
+}
+button:hover{
+    cursor: pointer;
+}
+.normal:hover{
+    background-color: #acacac;
+}
+.special:hover {
+    background-color: rgb(71, 71, 71);
+}
+.operation:hover{
+    background-color: rgb(216, 142, 6);
+}
+.special{
+    background-color: rgb(86, 88, 85);
+    color: #fff;
+}
+.operation{
+    background-color: orange;
+}
+#buttonAC{
+    grid-column: 1/4;
+}
+#buttonDivide{
+    grid-column: 4/5;
+
+}
+#button0{
+    grid-column: 1/4;
+
+}
+#buttonEqual{
+    grid-column: 4/5;
+
+}
